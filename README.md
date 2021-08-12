@@ -1,4 +1,4 @@
-# Northwind Nortwhind e-trade web application project.
+# Northwind e-trade web application project.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
