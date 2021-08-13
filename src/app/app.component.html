@@ -1,10 +1,13 @@
-<!-- Welcome to {{title}} Hello {{user}}
+<div class="container">
+  <app-navi></app-navi>
+  <div class="row">
+    <div class="col-md-3">
+      <app-category></app-category>
+    </div>
+    <div class="col-md-9">
+      <app-product></app-product>
+    </div>
+  </div>
 
- <ul>
-   <li *ngFor="let product of products">{{product.productName}}</li>
- </ul> -->
- <app-navi></app-navi>
- <app-product></app-product>
- <app-category></app-category>
- 
- <router-outlet></router-outlet> 
+  <router-outlet></router-outlet>
+</div>
