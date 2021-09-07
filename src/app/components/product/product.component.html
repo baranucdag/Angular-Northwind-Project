@@ -8,14 +8,16 @@
       <th>Product Name</th>
       <th>Category</th>
       <th>Unit Price</th>
-      <th>Unit ın Stock</th>
+      <th>Price With Tax</th>
+      <th>Unit In Stock</th>
     </tr>
   </thead>
   <tr *ngFor="let product of products">
     <td>{{ product.productId }}</td>
-    <td>{{ product.productName }}</td>
+    <td>{{ product.productName |uppercase }}</td>
     <td>{{ product.categoryId }}</td>
-    <td>{{ product.unitPrice }}</td>
+    <td>{{ product.unitPrice | currency }}</td>
+    <td>{{ product.unitPrice | vatAdded:18 | currency }}</td>
     <td>{{ product.unitsInStock }}</td>
   </tr>
 </table>
